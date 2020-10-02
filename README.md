@@ -1,5 +1,5 @@
 # Repository di Federico Bove
+
 ### Elenco Esercizi:
-1. Ajax
-2. NodeJs Intro
-3. App Angular (my-app)
+1. NodeJs Intro
+2. Angular Getting Started (my-app)
