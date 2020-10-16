@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  names = ["Barac Obama","Lewis Hamilton","Cristiano Ronaldo","Federico Bove","Paulo Dybala","Arturo Vidal","Brad Pitt","Leonardo Di Caprio","Mario Rossi","Gianni Blu"];
+  names = ["Barac Obama", "Lewis Hamilton", "Cristiano Ronaldo", "Federico Bove", "Paulo Dybala", "Arturo Vidal", "Brad Pitt", "Leonardo Di Caprio", "Mario Rossi", "Gianni Blu"];
   myName = 'Federico Bove';
 
 
