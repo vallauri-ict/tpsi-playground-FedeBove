@@ -5,12 +5,12 @@ console.log('Server is up and running');
 
 function onRequest(req, res){
     var path = url.parse(req.url).pathname;
-    console.log('Server parsed path: '+path);
+    console.log('Server parsed path: ' + path);
     switch (path){
         case '/':
             res.writeHead(200, {'Content-type': 'text/html'});
             var fs = require('fs');
-            fs.readFile(__dirname + '/test.html', function(err, content){
+            fs.readFile(__dirname + '/Principale.html', function(err, content){
                 if(err){
                     res.writeHead(500);
                     return res.end('Error loading file');
@@ -22,7 +22,7 @@ function onRequest(req, res){
         case '/Studenti':
                 res.writeHead(200, {'Content-type': 'text/html'});
                 var fs = require('fs');
-                fs.readFile(__dirname + '/HTML/test2.html', function(err, content){
+                fs.readFile(__dirname + '/Studenti.html', function(err, content){
                     if(err){
                         res.writeHead(500);
                         return res.end('Error loading file');
@@ -34,7 +34,7 @@ function onRequest(req, res){
         case '/Professori':
                 res.writeHead(200, {'Content-type': 'text/html'});
                 var fs = require('fs');
-                fs.readFile(__dirname + '/HTML/test3.html', function(err, content){
+                fs.readFile(__dirname + '/Professori.html', function(err, content){
                     if(err){
                         res.writeHead(500);
                         return res.end('Error loading file');
@@ -46,7 +46,7 @@ function onRequest(req, res){
         case '/Genitori':
                 res.writeHead(200, {'Content-type': 'text/html'});
                 var fs = require('fs');
-                fs.readFile(__dirname + '/HTML/test4.html', function(err, content){
+                fs.readFile(__dirname + '/Genitori.html', function(err, content){
                     if(err){
                         res.writeHead(500);
                         return res.end('Error loading file');
