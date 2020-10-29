@@ -7,3 +7,10 @@
 </ol>
 <h4>RESULTS</h4>
 <!--TODO: Esercizio-->
+<input type="text" class="form-control" [(ngModel)]="username" (ngModelChange)="enableButton()"/>
+<br>
+<button class="btn btn-primary" [disabled]="!allowSend" (click)="onCreateUsername()">Add Username</button>
+<br>
+<br>
+{{newUsername}}
+<hr>
