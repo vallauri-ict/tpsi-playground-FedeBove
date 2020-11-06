@@ -10,14 +10,18 @@ export class ServerComponent {
 
     constructor(){
         this.serverId = this.getRandomInt(1, 100);
+        this.setServerStatus();
     }
 
-    getServerStatus() {
-        this.serverStatus = this.getRandomInt(0, 1) == 0 ? 'offline' : 'online';
-        return this.serverStatus;
+    setServerStatus() {
+        this.serverStatus = Math.random() > 0.5 ? 'offline' : 'online';
     }
 
     getRandomInt(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    getColor(){
+        return this.serverStatus === 'online' ? 'green' : 'red';
     }
 }

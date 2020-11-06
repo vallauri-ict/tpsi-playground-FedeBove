@@ -21,10 +21,4 @@ export class PracticingDatabindingComponent implements OnInit {
     this.username = "";
     this.allowSend = false;
   }
-
-  enableButton(){
-    if(this.username){
-      this.allowSend = true;
-    }
-  }
 }
