@@ -1,8 +1,4 @@
 # Repository di Federico Bove
 
 ### Elenco Esercizi:
-1. NodeJs Intro
-2. Angular Intro
-3. Web Server
-4. Dispatcher
-5. Server with NodeJs
+1. Angular Course
